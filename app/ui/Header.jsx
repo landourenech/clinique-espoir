@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Dropdown from "./Dropdown";
 
-import { services, apropos, carrieres, actualites } from "../lib/data/services";
+import { services, apropos, carrieres } from "../lib/data/services";
 
 import {
   FaFacebookF,
@@ -89,13 +89,8 @@ export default function Header() {
           </li>
 
           {/* ACTUALITÉS */}
-          <li className="relative">
-            <button onClick={() => toggleMenu("actualites")} className="hover:underline text-white">
-              Actualités & Médias
-            </button>
-            {openMenu === "actualites" && (
-              <Dropdown items={actualites} basePath="/actualites" onClick={closeMenu} />
-            )}
+          <li>
+            <Link href="/actualite" className="hover:underline text-white">Actualités & Médias</Link>
           </li>
 
           {/* CARRIÈRE */}

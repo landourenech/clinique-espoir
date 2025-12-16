@@ -133,7 +133,7 @@ export const actualites = [
     description:
       "Ouverture officielle d’un nouveau centre équipé des dernières technologies médicales.",
     image: "/actualites/evenement1.jpg",
-    route: "/actualite/evenement1",
+    route: "/actualite/evenement1"
   },
   {
     slug: "evenement2",
@@ -141,7 +141,7 @@ export const actualites = [
     description:
       "Campagne dédiée à la promotion de la santé mentale et du bien-être.",
     image: "/actualites/evenement2.jpg",
-    route: "/actualite/evenement2",
+    route: "/actualite/evenement2"
   },
   {
     slug: "evenement3",
@@ -149,13 +149,10 @@ export const actualites = [
     description:
       "Atelier interactif axé sur la nutrition et les bonnes pratiques de santé.",
     image: "/actualites/evenement3.jpg",
-    route: "/actualite/evenement3",
-  },
+    route: "/actualite/evenement3"
+  }
 ];
 
-/* =========================
-   NEWS
-========================= */
 export const news = [
   {
     slug: "nouveau-service",
@@ -163,7 +160,7 @@ export const news = [
     description:
       "Lancement de la télémédecine pour faciliter l’accès aux consultations à distance.",
     image: "/news/nouveau-service.jpg",
-    route: "/actualite/nouveau-service",
+    route: "/actualite/nouveau-service"
   },
   {
     slug: "recherche-medicale",
@@ -171,7 +168,7 @@ export const news = [
     description:
       "Découverte et amélioration des traitements grâce à la recherche médicale.",
     image: "/news/recherche-medicale.jpg",
-    route: "/actualite/recherche-medicale",
+    route: "/actualite/recherche-medicale"
   },
   {
     slug: "evenement-communautaire",
@@ -179,8 +176,8 @@ export const news = [
     description:
       "Participation active de la clinique à un événement de santé communautaire.",
     image: "/news/evenement-communautaire.jpg",
-    route: "/actualite/evenement-communautaire",
-  },
+    route: "/actualite/evenement-communautaire"
+  }
 ];
 
 /* =========================
