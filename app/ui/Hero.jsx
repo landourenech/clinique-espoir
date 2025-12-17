@@ -19,20 +19,24 @@ function Hero() {
   }, []);
 
   return (
-    <div className="relative pt-20 w-full h-[50vh] md:h-[90vh] lg:h-[85vh] overflow-hidden">
-      <AnimatePresence>
-        <motion.div
-          key={current}
-          className="absolute inset-0 bg-center bg-cover bg-no-repeat"
-          style={{ backgroundImage: `url(${images[current]})` }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.5 }}
-        />
-      </AnimatePresence>
+    <div className="relative w-full overflow-hidden">
+      {/* Hero height responsive */}
+      <div className="h-[50vh] md:h-[70vh] lg:h-[85vh]">
+        <AnimatePresence>
+          <motion.div
+            key={current}
+            className="absolute inset-0 bg-center bg-cover bg-no-repeat"
+            style={{ backgroundImage: `url(${images[current]})` }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5 }}
+          />
+        </AnimatePresence>
 
-      <div className="absolute inset-0"></div>
+        {/* Optional overlay for contrast */}
+        <div className="absolute inset-0 bg-black/20"></div>
+      </div>
     </div>
   );
 }
