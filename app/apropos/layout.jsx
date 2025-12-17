@@ -1,7 +1,3 @@
 export default function AproposLayout({ children }) {
-  return (
-    <main>
-      {children}
-    </main>
-  )
+  return <main>{children}</main>;
 }

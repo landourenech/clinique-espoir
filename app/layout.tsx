@@ -11,21 +11,19 @@ export const metadata: Metadata = {
   icons: {
     icon: "/logo.jpg",
     shortcut: "/logo.jpg",
-    apple: "/logo.jpg",
+    apple: "/logo.png",
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="fr">
-      <body
-        className={`${ptSansNarrow.className} $ antialiased`}
-      >
-        <Header />
+      <body className={`${ptSansNarrow.className}`}>
+        <Header /> {/* UN SEUL HEADER pour tout le site */}
         {children}
         <Partenaire />
         <Footer />

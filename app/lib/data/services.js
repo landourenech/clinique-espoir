@@ -1,3 +1,5 @@
+import { image } from "framer-motion/client";
+
 /* =========================
    SERVICES
 ========================= */
@@ -83,13 +85,13 @@ export const apropos = [
     slug: "history",
     title: "Notre Histoire",
     image: "/clinique.jpg",
-    route: "/about/history",
+    route: "/apropos/history",
   },
   {
     slug: "team",
     title: "Notre Équipe",
     image: "/personnel.jpg",
-    route: "/about/team",
+    route: "/apropos/team",
   },
 ];
 
@@ -100,6 +102,7 @@ export const histoire = [
   {
     year: "2005",
     event: "Fondation de la Clinique",
+    image: "/clinique.jpg",
     description:
       "Création de la Clinique de l’Espoir et de l’Espérance avec la mission d’offrir des soins accessibles et de qualité.",
   },
