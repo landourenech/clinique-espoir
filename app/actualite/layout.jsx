@@ -1,9 +1,10 @@
-import React from 'react'
+import Newsletter from "../ui/Newsletter";
 
 function LayoutActualite({ children }) {
   return (
     <main>
       {children}
+      <Newsletter />
     </main>
   )
 }
